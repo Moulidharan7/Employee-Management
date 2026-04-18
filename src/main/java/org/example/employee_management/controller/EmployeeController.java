@@ -66,4 +66,9 @@ public class EmployeeController {
     public Employee getMaxSalary1(){
         return employeeService.getMaxSalary1();
     }
+
+    @GetMapping("/minSalary")
+    public Employee getMinSalary(){
+        return employeeService.getMinSalary();
+    }
 }

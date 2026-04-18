@@ -58,4 +58,8 @@ public class EmployeeService {
         return employeeRepository.findTopByOrderBySalaryDesc();
     }
 
+    public Employee getMinSalary(){
+        return employeeRepository.findTopByOrderBySalaryAsc();
+    }
+
 }
